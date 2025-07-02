@@ -1,0 +1,26 @@
+justice_league = ["Superman","Batman","Wonder Woman","Flash","Aquaman","Green Lantern"]
+print(justice_league)
+members = len(justice_league)
+print(f"Number of members in Justice League = {members}")
+print("Batman recruited Batgirl and Nightwing.")
+new_members = ["Batgirl","Nightwing"]
+justice_league.extend(new_members)
+print(f"New List: {justice_league}")
+print("Wonder Woman is now the new leader of Justice League.")
+justice_league.pop(2)
+print(justice_league)
+justice_league.insert(0,"Wonder Woman")
+print(f"Moving her to the beginning of the list: {justice_league}")
+justice_league.pop(1)
+justice_league.insert(3,"Superman")
+print(f"Superman solves the conflict between Flash and Aquaman: {justice_league}")
+print("Justice League faces an crisis, Superman created a new team.")
+justice_league.clear()
+print(justice_league)#Will print Empty List.
+new_team = ["Cyborg","Shazam","Hawkgirl","Martian Manhunter","Green Arrow"]
+justice_league.extend(new_team)
+print(f"New Justice League: {justice_league}")
+print(f"Sorting the list alphabetically, the hero at the 0th index will be the new leader.")
+justice_league.sort()
+print(justice_league)
+print(f"From the new list, the new leader of the Justice League is: {justice_league[0]}")
